@@ -1,37 +1,31 @@
 # Echarts
 
-#### 介绍
-Echarts学习
+#### 使用步骤
 
-#### 软件架构
-软件架构说明
+下载并引入echarts.js                                  文件图表依赖这个js库
+准备一个具备大小的DOM容器                   生成的图表会放入这个容器内
+初始化echarts实例对象                         	  实例化echarts对象 
+指定配置项和数据(option)                  		根据具体需求修改配置选项 
+将配置项设置给echarts实例对象               让echarts对象根据修改好的配置生效
 
+#### 基本配置
 
-#### 安装教程
+title:标题组件
+tooltip:提示框组件 
+legend:图例组件 
+toolbox:工具栏
+grid:直角坐标系内绘图网格
+xAxis:直角坐标系grid中的x轴 
+yAxis:直角坐标系grid中的y轴
+series:系列列表、每个系列通过type决定自己的图表类型(什么类型的图标) 
+color:调色盘颜色列表
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### series: 系列列表
 
-#### 使用说明
+type: 类型(什么类型的图表)比如line是折线bar柱形等
+name:系列名称，用于tooltip的显示，legend的图例筛选变化
+stack:数据堆叠。 如果设置相同值，则会数据堆叠。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+数据堆叠: 第二个数据值=第一个数据值+第二个数据值
+        		 第三个数据值=第二个数据值+第三个数据值....依次叠加
+       		  如果给stack指定不同值或者去掉这个属性则不会发生数据堆叠
